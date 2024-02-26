@@ -106,7 +106,11 @@ function insertContent(id, payload) {
 
 function displayDialog(state) {
     const dialog = document.getElementById("dialog-holder")
-    dialog.style.display = "block";
+    dialog.style.display = !state ? "none" : "flex";
+    dialog.style.height = "0rem !important";
+    dialog.style.maxHeight = "0rem !important";
+    dialog.style.minHeight = "0rem !important";
+    
     dialog.innerHTML = !state ? '' : `
     <div class="start-conversation">
     <div class="notification">

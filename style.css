@@ -300,6 +300,10 @@ section {
 
 #dialog-holder {
     display: none;
+    height: 0% !important;
+    max-height: 0% !important;
+    padding: 0% !important;
+    margin: 0% !important;
 }
 
 .notification {
