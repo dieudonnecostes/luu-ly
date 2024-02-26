@@ -72,7 +72,7 @@ function insertContent(id, payload) {
                     </section>
                     `;
                 setTimeout(() => {
-                    fetch("https://randomuser.me/api/?gender=male&results=10").then(raw => raw.json()).then((res) => {
+                    fetch("https://randomuser.me/api/?gender=male&results=15").then(raw => raw.json()).then((res) => {
                         insertContent('display-users', { users: res.results })
                     })
                 }, 2500)
@@ -84,7 +84,7 @@ function insertContent(id, payload) {
                     <section class="display-users">
                         <div class="curtain">
                             ${[...users].map((e, i) => {
-                    return `<div class="single-user" style="top: ${5 + (e.dob.age / 2.5) + i}rem; ${i % 2 ? 'left' : 'right'}: ${3 + i + (i + 2)}rem; margin-top: ${i + 1}px;">
+                    return `<div class="single-user" style="top: ${0 + (e.dob.age / 2.5) + i}rem; ${i % 2 ? 'left' : 'right'}: ${0 + i + (i + 2)}rem; margin-top: ${i + 1}px;">
                                 <img
                                 src="${e.picture.large}"
                                 alt="LUU-user"
@@ -110,7 +110,7 @@ function displayDialog(state) {
     dialog.style.height = "0rem !important";
     dialog.style.maxHeight = "0rem !important";
     dialog.style.minHeight = "0rem !important";
-    
+
     dialog.innerHTML = !state ? '' : `
     <div class="start-conversation">
     <div class="notification">

@@ -231,6 +231,11 @@ section {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
+
+.single-user p{
+    white-space: nowrap;
+}
+
 .single-user img {
     height: 2rem;
     width: 2rem;
