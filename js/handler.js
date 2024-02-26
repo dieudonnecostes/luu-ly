@@ -43,7 +43,7 @@ function insertContent(id, payload) {
                         </div>
                         <div class="istyping">
                             <img src="../imgs/lu.jpeg"/>
-                            <p class="small"><i>Rex Zihindula ${"is"} typing...</i></p>
+                            <p class="small"><i>Thomas Zihindula ${"is"} typing...</i></p>
                         </div>
                         <div class="bottombar">
                             <i class="fa fa-plus"></i>
